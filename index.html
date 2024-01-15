@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<title>Winter Activities Survey</title>
+	<a href="https://ottawatourism.ca/en/ottawa-insider/wonderful-outdoor-winter-activities-ottawa">Winter activities in Ottawa</a> <br>
+
+	<div class="image-zoom-container">	
+	
+		<!-- 
+		OPTIONAL: Image zoom - instructions I used:   https://www.w3schools.com/howto/howto_js_image_zoom.asp 
+		-->
+		<a href="https://www.rei.com/learn/expert-advice/how-to-snowboard.html">
+			<img id="snowboarderImage" src="snowboarder.jpg" width="300" height="240" alt="Snowboarder">
+		</a>
+		<div id="imageZoomResult" class="img-zoom-result"></div>
+	</div>
+
+	<form>
+		<label for="fullName">Full name:</label><br>
+		<input type="text" id="fullName" name="fullName"><br><br>
+		
+
+		<label for="birthday">Enter your birthday:</label>
+		<input type="date" id="birthday" name="birthday">
+
+
+		<p>Select your age group:</p>
+
+		<input type="radio" name="fav_language" id="child" value="0-12">
+		<label for="child">0-12</label><br>
+
+		<input type="radio" name="fav_language" id="teen" value="13-17">
+		<label for="teen">13-17</label><br>
+
+		<input type="radio" name="fav_language" id="youngAdult" value="18-24">
+		<label for="youngAdult">18-24</label><br>
+
+		<input type="radio" name="fav_language" id="adult" value="25+">
+		<label for="adult">25+</label><br>
+
+
+		<p>Which winter activities do you enjoy? (Select all that apply)</p>
+
+		<input type="checkbox" id="skiing" name="skiing" value="Skiing">
+		<label for="skiing"> Skiing </label><br>
+
+		<input type="checkbox" id="snowboarding" name="snowboarding" value="Snowboarding">
+		<label for="snowboarding"> Snowboarding </label><br>
+
+		<input type="checkbox" id="skating" name="skating" value="Skating">
+		<label for="skating"> Skating </label><br>
+
+		<input type="checkbox" id="crossCountrySkiing" name="crossCountrySkiing" value="Cross-Country Skiing">
+		<label for="crossCountrySkiing"> Cross-country skiing </label><br>
+
+		<input type="checkbox" id="snowshoeing" name="snowshoeing" value="Snowshoeing">
+		<label for="snowshoeing"> Snowshoeing </label><br>
+
+		<input type="checkbox" id="snowTubing" name="snowTubing" value="Snow Tubing">
+		<label for="snowTubing"> Snow Tubing </label><br>
+
+		<input type="checkbox" id="tobogganing" name="tobogganing" value="Tobogganing">
+		<label for="tobogganing"> Tobogganing </label><br><br>
+
+
+		<label for="activenessLevel">Select your fitness level:</label>
+
+		<select id="activenessLevel" name="activenessLevel">
+			<option value="Not Active">Not active (< 1 hour per week)</option>
+			<option value="Slightly Active">Slightly active (1-3 hours per week)</option>
+			<option value="Moderately Active">Moderately active (4-7 per week)</option>
+			<option value="Very Active">Very active (> 8 per week)</option>
+		</select><br><br>
+
+
+		<label for="hoursAvailable">How many hours per week do you want to spend on winter activities?</label>
+		<input type="number" id="hoursAvailable" name="hoursAvailable" min="0" max="50">
+
+
+		<p>Comments</p>
+
+		<textarea name="comments" rows="10" cols="30" placeholder="Enter any additional comments here..." ></textarea><br><br>
+			
+		<input type="submit" value="Submit">
+
+		<p>Website designed by Group 44 (Andrew, Zechen, Lisa)</p>
+	</form>
+
+</html>
