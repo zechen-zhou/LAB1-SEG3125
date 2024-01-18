@@ -1,80 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<title>Winter Activities Survey</title>
-	<a href="https://ottawatourism.ca/en/ottawa-insider/wonderful-outdoor-winter-activities-ottawa">Winter activities in Ottawa</a> <br>
+<!--#17D1E6-->
+
+	<title>DLC Questionnaire</title>
+	<link rel="icon" href="favicon.ico"/>
+
+	<a href="https://discoverylandco.com/">Discovery Land Company</a> <br>
 
 	<div class="image-zoom-container">	
 	
 		<!-- 
 		OPTIONAL: Image zoom - instructions I used:   https://www.w3schools.com/howto/howto_js_image_zoom.asp 
 		-->
-		<a href="https://www.rei.com/learn/expert-advice/how-to-snowboard.html">
-			<img id="snowboarderImage" src="snowboarder.jpg" width="300" height="240" alt="Snowboarder">
+		<a href="https://discoverylandco.com/">
+			<img id="websiteScreenshot" src="websiteScreenshot.png" alt="Discovery Land Company Website Screenshot" height="100%" width="100%">
 		</a>
 		<div id="imageZoomResult" class="img-zoom-result"></div>
 	</div>
 
 	<form>
-		<label for="fullName">Full name:</label><br>
-		<input type="text" id="fullName" name="fullName"><br><br>
-		
-
-		<label for="birthday">Enter your birthday:</label>
-		<input type="date" id="birthday" name="birthday">
+		<label for="email">Enter your email:</label><br>
+		<input type="email" id="email" name="email"> <br><br>
 
 
-		<p>Select your age group:</p>
+		<label for="ageGroup">Select your age range:</label>
 
-		<input type="radio" name="fav_language" id="child" value="0-12">
-		<label for="child">0-12</label><br>
-
-		<input type="radio" name="fav_language" id="teen" value="13-17">
-		<label for="teen">13-17</label><br>
-
-		<input type="radio" name="fav_language" id="youngAdult" value="18-24">
-		<label for="youngAdult">18-24</label><br>
-
-		<input type="radio" name="fav_language" id="adult" value="25+">
-		<label for="adult">25+</label><br>
-
-
-		<p>Which winter activities do you enjoy? (Select all that apply)</p>
-
-		<input type="checkbox" id="skiing" name="skiing" value="Skiing">
-		<label for="skiing"> Skiing </label><br>
-
-		<input type="checkbox" id="snowboarding" name="snowboarding" value="Snowboarding">
-		<label for="snowboarding"> Snowboarding </label><br>
-
-		<input type="checkbox" id="skating" name="skating" value="Skating">
-		<label for="skating"> Skating </label><br>
-
-		<input type="checkbox" id="crossCountrySkiing" name="crossCountrySkiing" value="Cross-Country Skiing">
-		<label for="crossCountrySkiing"> Cross-country skiing </label><br>
-
-		<input type="checkbox" id="snowshoeing" name="snowshoeing" value="Snowshoeing">
-		<label for="snowshoeing"> Snowshoeing </label><br>
-
-		<input type="checkbox" id="snowTubing" name="snowTubing" value="Snow Tubing">
-		<label for="snowTubing"> Snow Tubing </label><br>
-
-		<input type="checkbox" id="tobogganing" name="tobogganing" value="Tobogganing">
-		<label for="tobogganing"> Tobogganing </label><br><br>
-
-
-		<label for="activenessLevel">Select your fitness level:</label>
-
-		<select id="activenessLevel" name="activenessLevel">
-			<option value="Not Active">Not active (< 1 hour per week)</option>
-			<option value="Slightly Active">Slightly active (1-3 hours per week)</option>
-			<option value="Moderately Active">Moderately active (4-7 per week)</option>
-			<option value="Very Active">Very active (> 8 per week)</option>
+		<select id="ageGroup" name="ageGroup">
+			<option value="0-12">0-12</option>
+			<option value="13-17">13-17</option>
+			<option value="18-24">18-24</option>
+			<option value="25+">25+</option>
 		</select><br><br>
 
 
-		<label for="hoursAvailable">How many hours per week do you want to spend on winter activities?</label>
-		<input type="number" id="hoursAvailable" name="hoursAvailable" min="0" max="50">
+		<p>Do you use light or dark mode?</p>
+
+		<input type="radio" name="fav_language" id="light" value="Light">
+		<label for="light">Light</label> <br>
+
+		<input type="radio" name="fav_language" id="dark" value="Dark">
+		<label for="dark">Dark</label> <br>
+
+		<input type="radio" name="fav_language" id="both" value="Both">
+		<label for="both">Both</label> <br>
+
+
+		<p>Which of the following components/features of the Discovery Land Company website did you like? (Select all that apply)</p>
+
+		<input type="checkbox" id="hamburgerMenu" name="hamburgerMenu" value="Hamburger Menu">
+		<label for="hamburgerMenu">Hamburger Menu</label> <br>
+
+		<input type="checkbox" id="pageNavButtons" name="pageNavButtons" value="Page Navigation Buttons">
+		<label for="pageNavButtons">Page Navigation Buttons</label> <br>
+
+		<input type="checkbox" id="scroll" name="scroll" value="Page Scrolling">
+		<label for="scroll">Page Scrolling</label> <br>
+
+		<input type="checkbox" id="colorPalette" name="colorPalette" value="Color Palette">
+		<label for="colorPalette">Color Palette</label> <br>
+
+		<input type="checkbox" id="fonts" name="fonts" value="Fonts">
+		<label for="fonts">Fonts</label> <br>
+
+		<input type="checkbox" id="buttons" name="buttons" value="Buttons">
+		<label for="buttons">Buttons</label><br>
+
+		<input type="checkbox" id="photoGallery" name="photoGallery" value="Photo Gallery">
+		<label for="photoGallery">Photo Gallery</label><br><br>
+
+		<input type="checkbox" id="videoGallery" name="videoGallery" value="Video Gallery in landing page background">
+		<label for="videoGallery">Video Gallery in landing page background</label><br><br>
+
+
+		<p>Rate your overall experience using the Discovery Land Company website:</p>
+
+		<input type="radio" name="fav_language" id="1" value="1">
+		<label for="1">1</label> <br>
+
+		<input type="radio" name="fav_language" id="1" value="2">
+		<label for="2">2</label> <br>
+
+		<input type="radio" name="fav_language" id="3" value="3">
+		<label for="3">3</label> <br>
+
+		<input type="radio" name="fav_language" id="4" value="4">
+		<label for="4">4</label> <br>
+
+		<input type="radio" name="fav_language" id="5" value="5">
+		<label for="5">5</label> <br>
 
 
 		<p>Comments</p>
