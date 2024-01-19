@@ -7,7 +7,9 @@
 ### 4. Each members contribution:
 
 >Andrew Clarke
-* TO-DO
+* Designed components and general page structure using external design tool (Penpot - similar to Figma)
+* Implemented custom components (checkbox, text field, number field, email field)
+* Minor adjustments to components implemented by other team members (radio, dropdown)
 
 >Lisa Korolyov
 * TO-DO
