@@ -351,3 +351,10 @@ button {
 .text-field input:not(:focus):hover {
     background-color: rgba(179, 185, 187, 0.2);
 }
+
+/* -- PARAGRAPH -- */
+p {
+    color: rgba(179, 185, 187, 1);
+    font-size: 12px;
+    font-weight: 500;
+}
