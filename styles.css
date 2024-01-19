@@ -46,6 +46,7 @@ button {
     }
 }
 
+
 /* Secondary Button */
 .btn-secondary {
     padding: 4px 12px;
@@ -79,6 +80,18 @@ button {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    /* On hover */
+    &:hover {
+        /* Tint text */
+        & div.label {
+            color: rgba(178, 237, 244, 1);
+        }
+        /* Tint box background */
+        & input ~ .checkmark {
+            background-color: rgba(23, 209, 230, 0.2);
+        } 
+    }  
 }
 
 /* Center text vertically */
@@ -91,11 +104,6 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: start;
-}
-
-/* Tint text on hover */
-.checkbox:hover div.label {
-    color: rgba(178, 237, 244, 1);
 }
 
 /* Hide the browser's default checkbox */
@@ -116,41 +124,41 @@ button {
     width: 20px;
     border-radius: 4px;
     background-color: rgba(179, 185, 187, 0.1);
+
+    /* Custom checkmark/indicator (hidden when not checked) */
+    & svg {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 2px;
+        top: 2px;
+    }
 }
 
-/* On hover, add tint box background */
-.checkbox:hover input ~ .checkmark {
-    background-color: rgba(23, 209, 230, 0.2);
-}
-
-/* When checked, add gradient background */
-.checkbox input:checked ~ .checkmark {
-    background-image: linear-gradient(to right, rgba(23, 209, 230, 1) 0%,rgba(23, 230, 196, 1) 100%);
-}
 
 
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkbox .checkmark svg {
-    content: "";
-    position: absolute;
-    display: none;
-    left: 2px;
-    top: 2px;
-}
+/* Styles When Checked */
+.checkbox input:checked {
+    & ~ .checkmark {
+        background-image: linear-gradient(to right, rgba(23, 209, 230, 1) 0%,rgba(23, 230, 196, 1) 100%);
 
-/* Show the checkmark when checked */
-.checkbox input:checked ~ .checkmark svg.check {
-    display: block;
-}
+        /* Show checkmark */
+        & svg.check {
+            display: block;
+        }
+    }
 
-/* Hide the checkmark when checked, but hovering */
-.checkbox input:checked:hover ~ .checkmark svg.check {
-    display: none;
-}
-
-/* Show the x when checked, but hovering */
-.checkbox input:checked:hover ~ .checkmark svg.x {
-    display: block;
+    /* When checked, but hovering */
+    &:hover ~ .checkmark {
+        /* Hide the checkmark */
+        & svg.check {
+           display: none; 
+        }
+        /* Show the X */
+        & svg.x {
+            display: block;
+        }
+    }
 }
 
 /* -- DROPDOWN MENU -- */
