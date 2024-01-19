@@ -1,3 +1,13 @@
+/* General */
+
+body {
+    margin: 0;
+    padding: 80px;
+    background-color: #2B2E2E;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
 /* -- BUTTTONS -- */
 
 /* Common Button Styles */
