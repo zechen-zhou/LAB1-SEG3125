@@ -1,0 +1,156 @@
+/* -- BUTTTONS -- */
+
+/* Common Button Styles */
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    width: fit-content;
+    height: fit-content;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+/* Primary Button */
+.btn-primary {
+    padding: 6px 16px;
+    background-image: linear-gradient(to right, rgba(23, 209, 230, 1) 0%,rgba(23, 230, 196, 1) 100%);
+
+    /* Text Styles */
+    color: rgba(43, 46, 46, 1);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    &:hover {
+        color: #24676f; 
+    }
+}
+
+/* Secondary Button */
+.btn-secondary {
+    padding: 4px 12px;
+    background-color: rgba(87, 92, 93, 1);
+
+    /* Text Styles */
+    color: #b6babb;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+
+    &:hover {
+        color: rgba(245, 249, 250, 1);
+    }
+}
+
+
+
+/* -- CHECKBOX -- */
+
+/* Outermost checkbox container */
+.checkbox {
+    display: block;
+    position: relative;
+    padding-left: 32px;
+    height: 20px;
+    width: fit-content;
+    
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Center text vertically */
+.checkbox div.label {
+    height: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(179, 185, 187, 1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+/* Tint text on hover */
+.checkbox:hover div.label {
+    color: rgba(178, 237, 244, 1);
+}
+
+/* Hide the browser's default checkbox */
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create custom checkbox */
+.checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    background-color: rgba(179, 185, 187, 0.1);
+}
+
+/* On hover, add tint box background */
+.checkbox:hover input ~ .checkmark {
+    background-color: rgba(23, 209, 230, 0.2);
+}
+
+/* When checked, add gradient background */
+.checkbox input:checked ~ .checkmark {
+    background-image: linear-gradient(to right, rgba(23, 209, 230, 1) 0%,rgba(23, 230, 196, 1) 100%);
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox .checkmark svg {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 2px;
+    top: 2px;
+}
+
+/* Show the checkmark when checked */
+.checkbox input:checked ~ .checkmark svg.check {
+    display: block;
+}
+
+/* Hide the checkmark when checked, but hovering */
+.checkbox input:checked:hover ~ .checkmark svg.check {
+    display: none;
+}
+
+/* Show the x when checked, but hovering */
+.checkbox input:checked:hover ~ .checkmark svg.x {
+    display: block;
+}
+
+/* -- DROPDOWN MENU -- */
+
+/* -- EMAIL FIELD -- */
+
+/* -- NUMBER FIELD -- */
+
+/* -- RADIO -- */
+
+/* -- SECTION HEADER -- */
+
+/* -- TEXT FIELD -- */
