@@ -23,7 +23,7 @@
         }
 
         /* Customize the label (the container) */
-        .radio-button .container {
+        .radio-button .radio {
             display: block;
             position: relative;
             padding-left: 32px;
@@ -35,6 +35,15 @@
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+
+            /* On hover, tint background color */
+            &:hover input ~ .dot {
+                background-color: rgba(23, 209, 230, 0.2);
+            }
+            /* Tint text on hover */
+            &:hover div.label {
+                color: rgba(178, 237, 244, 1);
+            }
         }
 
         /* Center text vertically */
@@ -49,13 +58,8 @@
             justify-content: start;
         }
 
-        /* Tint text on hover */
-        .radio-button .container:hover div.label {
-            color: rgba(178, 237, 244, 1);
-        }
-
         /* Hide the browser's default radio button */
-        .radio-button .container input {
+        .radio-button .radio input {
             position: absolute;
             opacity: 0;
             cursor: pointer;
@@ -74,14 +78,10 @@
             border-radius: 50%;
         }
 
-        /* On mouse-over, add a grey background color */
-        .radio-button .container:hover input ~ .dot {
-            background-color: rgba(23, 209, 230, 0.2);
-
-        }
+        
 
         /* When the radio button is checked, add a blue background */
-        .radio-button .container input:checked ~ .dot {
+        .radio-button .radio input:checked ~ .dot {
             background-image: linear-gradient(to right, rgba(23, 209, 230, 1) 0%,rgba(23, 230, 196, 1) 100%);
         }
 
@@ -93,12 +93,12 @@
         }
 
         /* Show the indicator (dot/circle) when checked */
-        .radio-button .container input:checked ~ .dot:after {
+        .radio-button .radio input:checked ~ .dot:after {
             display: block;
         }
 
         /* Style the indicator (dot/circle) */
-        .radio-button .container .dot:after {
+        .radio-button .radio .dot:after {
             top: 6px;
             left: 6px;
             width: 8px;
@@ -112,13 +112,13 @@
 <body>
     <div class="radio-button">
 
-        <label class="container">
+        <label class="radio">
             <div class="label">One</div>
             <input type="radio" name="radio-group">
             <span class="dot"></span>
         </label>
 
-        <label class="container">
+        <label class="radio">
             <div class="label">Two</div>
             <input type="radio" name="radio-group">
             <span class="dot"></span>

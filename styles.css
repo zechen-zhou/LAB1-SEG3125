@@ -64,11 +64,10 @@ button {
 }
 
 
+/* -- CHECKBOX & RADIO SHARED -- */
 
-/* -- CHECKBOX -- */
-
-/* Outermost checkbox container */
-.checkbox {
+/* Main checkbox/radio container */
+.checkbox, .radio-button .radio {
     display: block;
     position: relative;
     padding-left: 32px;
@@ -80,22 +79,19 @@ button {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
 
-    /* On hover */
-    &:hover {
-        /* Tint text */
-        & div.label {
-            color: rgba(178, 237, 244, 1);
-        }
-        /* Tint box background */
-        & input ~ .checkmark {
-            background-color: rgba(23, 209, 230, 0.2);
-        } 
-    }  
+/* Hide the browser's default checkbox/radio */
+.checkbox input, .radio-button .radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
 
 /* Center text vertically */
-.checkbox div.label {
+.checkbox div.label, .radio-button div.label {
     height: 100%;
     font-size: 14px;
     font-weight: 400;
@@ -106,14 +102,20 @@ button {
     justify-content: start;
 }
 
-/* Hide the browser's default checkbox */
-.checkbox input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
+
+/* -- CHECKBOX -- */
+
+/* Outermost checkbox container on hover*/
+.checkbox:hover {
+    /* Tint text */
+    & div.label {
+        color: rgba(178, 237, 244, 1);
+    }
+    /* Tint box background */
+    & input ~ .checkmark {
+        background-color: rgba(23, 209, 230, 0.2);
+    } 
+}  
 
 /* Create custom checkbox */
 .checkbox .checkmark {
@@ -134,8 +136,6 @@ button {
         top: 2px;
     }
 }
-
-
 
 /* Styles When Checked */
 .checkbox input:checked {
@@ -161,26 +161,10 @@ button {
     }
 }
 
-/* -- DROPDOWN MENU -- */
-
-/* -- EMAIL FIELD -- */
-
-/* -- NUMBER FIELD -- */
-
 /* -- RADIO -- */
-.radio-button {
-    position: relative;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    gap: 8px;
-    flex-wrap: nowrap;
-}
 
 /* Customize the label (the container) */
-.radio-button .container {
+.radio-button .radio {
     display: block;
     position: relative;
     padding-left: 32px;
@@ -194,30 +178,9 @@ button {
     user-select: none;
 }
 
-/* Center text vertically */
-.radio-button div.label {
-    height: 100%;
-    font-size: 14px;
-    font-weight: 400;
-    color: rgba(179, 185, 187, 1);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-}
-
 /* Tint text on hover */
-.radio-button .container:hover div.label {
+.radio-button .radio:hover div.label {
     color: rgba(178, 237, 244, 1);
-}
-
-/* Hide the browser's default radio button */
-.radio-button .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
 }
 
 /* Create a custom radio button */
@@ -232,13 +195,13 @@ button {
 }
 
 /* On mouse-over, add a grey background color */
-.radio-button .container:hover input ~ .dot {
+.radio-button .radio:hover input ~ .dot {
     background-color: rgba(23, 209, 230, 0.2);
 
 }
 
 /* When the radio button is checked, add a blue background */
-.radio-button .container input:checked ~ .dot {
+.radio-button .radio input:checked ~ .dot {
     background-image: linear-gradient(to right, rgba(23, 209, 230, 1) 0%,rgba(23, 230, 196, 1) 100%);
 }
 
@@ -250,12 +213,12 @@ button {
 }
 
 /* Show the indicator (dot/circle) when checked */
-.radio-button .container input:checked ~ .dot:after {
+.radio-button .radio input:checked ~ .dot:after {
     display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.radio-button .container .dot:after {
+.radio-button .radio .dot:after {
     top: 6px;
     left: 6px;
     width: 8px;
@@ -263,6 +226,18 @@ button {
     border-radius: 50%;
     background: #2B2E2E;
 }
+
+
+/* -- DROPDOWN MENU -- */
+/* (Not in the HTML for this lab) */
+
+/* -- EMAIL FIELD -- */
+/* (Not in the HTML for this lab) */
+
+/* -- NUMBER FIELD -- */
+/* (Not in the HTML for this lab) */
+
+
 
 /* -- SECTION HEADER -- */
 .section-header {
