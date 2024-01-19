@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <style>
+            body {
+                background-color: #2B2E2E;
+                font-family: 'Roboto';
+                font-style: normal;
+            }
+
+            .dropdown-menu .label-container {
+                height: 24px;
+                display: flex;
+                align-items: center;
+            }
+
+            .dropdown-menu label {
+                color: rgba(179, 185, 187, 1);
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            .dropdown-menu .custom-select select {
+                width: 180px;
+                height: 32px;
+                margin: 0;
+                padding: 4px 8px;
+                background-color: rgba(179, 185, 187, 0.1);
+
+                border: 1px solid rgb(23, 209, 230);
+                border-radius: 4px;
+                outline: none;
+
+                color: rgba(245, 249, 250, 1);
+            }
+
+            .dropdown-menu .custom-select select option {
+                background-color: #2B2E2E;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="dropdown-menu">
+            <div class="label-container">
+                <label for="field-name-here">
+                    Field Name
+                </label>
+            </div>
+            
+            <div class="custom-select">
+                <select id="field-name" name="field-name">
+                    <option value="">Selected Item</option>
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                </select>
+            </div>
+        </div>
+
+    </body>
+</html>
