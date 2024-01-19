@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\components",
+    "\\components\\checkbox",
+    "\\components\\radio",
+    "\\components\\text-field"
   ],
   "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
