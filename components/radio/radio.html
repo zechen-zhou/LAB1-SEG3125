@@ -76,36 +76,32 @@
             width: 20px;
             background-color: rgba(179, 185, 187, 0.1);
             border-radius: 50%;
-        }
 
-        
+            /* Create the indicator (the dot/circle - hidden when not checked) */
+            &:after {
+                content: "";
+                position: absolute;
+                display: none;
+
+                top: 6px;
+                left: 6px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: #2B2E2E;
+            }
+        }
 
         /* When the radio button is checked, add a blue background */
         .radio-button .radio input:checked ~ .dot {
             background-image: linear-gradient(to right, rgba(23, 209, 230, 1) 0%,rgba(23, 230, 196, 1) 100%);
+            
+            /* Show the indicator (dot/circle) */
+            &:after {
+                display: block;
+            }
         }
 
-        /* Create the indicator (the dot/circle - hidden when not checked) */
-        .radio-button .dot:after {
-            content: "";
-            position: absolute;
-            display: none;
-        }
-
-        /* Show the indicator (dot/circle) when checked */
-        .radio-button .radio input:checked ~ .dot:after {
-            display: block;
-        }
-
-        /* Style the indicator (dot/circle) */
-        .radio-button .radio .dot:after {
-            top: 6px;
-            left: 6px;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: #2B2E2E;
-        }
     </style>
 </head>
 

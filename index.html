@@ -5,6 +5,7 @@
 
 	<title>DLC Questionnaire</title>
 	<link rel="icon" href="favicon.ico"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="styles.css">
 
 	<a href="https://discoverylandco.com/">Discovery Land Company</a> <br>
@@ -28,54 +29,60 @@
 			<input type="email" id="email" name="email"> <br><br>
 		</div>
 
-		<label for="ageGroup">Select your age range:</label>
-
-		<select id="ageGroup" name="ageGroup">
-			<option value="0-12">0-12</option>
-			<option value="13-17">13-17</option>
-			<option value="18-24">18-24</option>
-			<option value="25+">25+</option>
-		</select><br><br>
+        <div class="dropdown-menu">
+            <div class="label-container">
+                <label for="ageGroup"> Select your age range </label>
+            </div>
+            
+            <div class="custom-select">
+                <select id="ageGroup" name="ageGroup">
+                    <option value="0-12">0-12</option>
+                    <option value="13-17">13-17</option>
+                    <option value="18-24">18-24</option>
+                    <option value="25+">25+</option>
+                </select>
+            </div>
+        </div>
 
 
 		<p>Do you use light or dark mode?</p>
 		
 		<div class="radio-button">
 
-			<!-- <label class="container">
-				<input type="radio" name="fav_language" id="light" value="Light">
-			<label for="light">Light</label>
-			</label> -->
-
-			<label class="container">
+			<label class="radio">
 				<div class="label">Light</div>
 				<input type="radio" name="fav_language" id="light" value="Light">
 				<span class="dot"></span>
 			</label>
 
-			<label class="container">
+			<label class="radio">
 				<div class="label">Dark</div>
 				<input type="radio" name="fav_language" id="dark" value="Dark">
 				<span class="dot"></span>
 			</label>
 
-			<!-- <input type="radio" name="fav_language" id="dark" value="Dark">
-			<label for="dark">Dark</label> <br> -->
-
-			<label class="container">
+			<label class="radio">
 				<div class="label">Both</div>
 				<input type="radio" name="fav_language" id="both" value="Both">
 				<span class="dot"></span>
 			</label>
-<!-- 
-			<input type="radio" name="fav_language" id="both" value="Both">
-			<label for="both">Both</label> <br> -->
+
 		</div>
 
 
 		<p>Which of the following components/features of the Discovery Land Company website did you like? (Select all that apply)</p>
 
-		<input type="checkbox" id="hamburgerMenu" name="hamburgerMenu" value="Hamburger Menu">
+        <label class="checkbox">
+            <div class="label">Hamburger Menu</div>
+            <input type="checkbox" name="hamburgerMenu" id="hamburgerMenu" value="Hamburger Menu" />
+            <span class="checkmark">
+                <svg class="check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2b2e2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
+                <svg class="x" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#21808a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </span>
+        </label>
+
+        
+		<!-- <input type="checkbox" id="hamburgerMenu" name="hamburgerMenu" value="Hamburger Menu">
 		<label for="hamburgerMenu">Hamburger Menu</label> <br>
 
 		<input type="checkbox" id="pageNavButtons" name="pageNavButtons" value="Page Navigation Buttons">
@@ -97,10 +104,10 @@
 		<label for="photoGallery">Photo Gallery</label><br><br>
 
 		<input type="checkbox" id="videoGallery" name="videoGallery" value="Video Gallery in landing page background">
-		<label for="videoGallery">Video Gallery in landing page background</label><br><br>
+		<label for="videoGallery">Video Gallery in landing page background</label><br><br> -->
 
-
-		<p>Rate your overall experience using the Discovery Land Company website:</p>
+        
+        <p>Rate your overall experience using the Discovery Land Company website:</p>
 
 		<input type="radio" name="fav_language" id="1" value="1">
 		<label for="1">1</label> <br>
@@ -125,6 +132,7 @@
 		<input type="submit" value="Submit">
 
 		<p>Website designed by Group 44 (Andrew, Zechen, Lisa)</p>
+        
 	</form>
 
 </html>
