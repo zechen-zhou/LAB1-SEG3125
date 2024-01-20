@@ -3,9 +3,10 @@
     "",
     "\\components",
     "\\components\\checkbox",
+    "\\components\\email-field",
     "\\components\\radio",
     "\\components\\text-field"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\components\\email-field\\email-field.html",
   "PreviewInSolutionExplorer": false
 }

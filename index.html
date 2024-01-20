@@ -1,138 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--#17D1E6-->
-
 	<title>DLC Questionnaire</title>
 	<link rel="icon" href="favicon.ico"/>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="styles.css">
-	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
-	<a href="https://discoverylandco.com/">Discovery Land Company</a> <br>
+    <p class="webpage-title">We would love your feedback!</p>
 
-	<div class="image-zoom-container">	
-	
-		<!-- 
-		OPTIONAL: Image zoom - instructions I used:   https://www.w3schools.com/howto/howto_js_image_zoom.asp 
-		-->
-		<a href="https://discoverylandco.com/">
-			<img id="websiteScreenshot" src="websiteScreenshot.png" alt="Discovery Land Company Website Screenshot" height="100%" width="100%">
-		</a>
-		<div id="imageZoomResult" class="img-zoom-result"></div>
-	</div>
+	<p class="question">Let us know how you feel about the <a href="https://discoverylandco.com/">Discovery Land Company</a> website by filling out the survey below.</p>
+
+	<a href="https://discoverylandco.com/">
+		<img id="websiteScreenshot" src="websiteScreenshot.png" alt="Discovery Land Company Website Screenshot" height="100%" width="100%">
+	</a>
+
 
 	<form>
-		<div class="text-field">
-			<div class="label-container">
-				<label for="email">Enter your email:</label><br>
-			</div>
-			<input type="email" id="email" name="email"> <br><br>
-		</div>
-
-        <div class="dropdown-menu">
-            <div class="label-container">
-                <label for="ageGroup"> Select your age range </label>
-            </div>
-            
-            <div class="custom-select">
-                <select id="ageGroup" name="ageGroup">
-                    <option value="0-12">0-12</option>
-                    <option value="13-17">13-17</option>
-                    <option value="18-24">18-24</option>
-                    <option value="25+">25+</option>
-                </select>
-            </div>
+        <div class="question-container">
+		    <div class="text-field">
+			    <div class="label-container">
+				    <label for="email" class="question">
+                        Enter your email:
+                    </label>
+			    </div>
+			    <input type="email" id="email" name="email">
+		    </div>        
         </div>
-
-
-		<p>Do you use light or dark mode?</p>
+        <div class="question-container">
+            <div class="dropdown-menu">
+                <div class="label-container">
+                    <label for="ageGroup" class="question">
+                        Select your age range:
+                    </label>
+                </div>
+            
+                <div class="custom-select">
+                    <select id="ageGroup" name="ageGroup">
+                        <option value="0-12">0-12</option>
+                        <option value="13-17">13-17</option>
+                        <option value="18-24">18-24</option>
+                        <option value="25+">25+</option>
+                    </select>
+                </div>
+            </div>        
+        </div>
+        <div class="question-container">
+		    <p class="question">Do you use light or dark mode?</p>
 		
-		<div class="radio-button">
+		    <div class="radio-button">
 
-			<label class="radio">
-				<div class="label">Light</div>
-				<input type="radio" name="fav_language" id="light" value="Light">
-				<span class="dot"></span>
-			</label>
+			    <label class="radio">
+				    <div class="label">Light</div>
+				    <input type="radio" name="fav_language" id="light" value="Light">
+				    <span class="dot"></span>
+			    </label>
 
-			<label class="radio">
-				<div class="label">Dark</div>
-				<input type="radio" name="fav_language" id="dark" value="Dark">
-				<span class="dot"></span>
-			</label>
+			    <label class="radio">
+				    <div class="label">Dark</div>
+				    <input type="radio" name="fav_language" id="dark" value="Dark">
+				    <span class="dot"></span>
+			    </label>
 
-			<label class="radio">
-				<div class="label">Both</div>
-				<input type="radio" name="fav_language" id="both" value="Both">
-				<span class="dot"></span>
-			</label>
+			    <label class="radio">
+				    <div class="label">Both</div>
+				    <input type="radio" name="fav_language" id="both" value="Both">
+				    <span class="dot"></span>
+			    </label>
+		    </div>        
+        </div>
+        <div class="question-container">
+		    <p class="question">Which of the following components/features of the Discovery Land Company website did you like? (Select all that apply)</p>
 
-		</div>
+            <label class="checkbox">
+                <div class="label">Hamburger Menu</div>
+                <input type="checkbox" name="checkboxQuestion" id="hamburgerMenu" value="Hamburger Menu" />
+                <span class="checkmark">
+                    <svg class="check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2b2e2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
+                    <svg class="x" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#21808a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </span>
+            </label>
 
+            <label class="checkbox">
+                <div class="label">Page Navigation Buttons</div>
+                <input type="checkbox" name="checkboxQuestion" id="pageNavButtons" value="Page Navigation Buttons" />
+                <span class="checkmark">
+                    <svg class="check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2b2e2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
+                    <svg class="x" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#21808a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </span>
+            </label>
 
-		<p>Which of the following components/features of the Discovery Land Company website did you like? (Select all that apply)</p>
+            <label class="checkbox">
+                <div class="label">Page Scrolling</div>
+                <input type="checkbox" name="checkboxQuestion" id="scroll" value="Page Scrolling" />
+                <span class="checkmark">
+                    <svg class="check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2b2e2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
+                    <svg class="x" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#21808a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </span>
+            </label>
 
-        <label class="checkbox">
-            <div class="label">Hamburger Menu</div>
-            <input type="checkbox" name="hamburgerMenu" id="hamburgerMenu" value="Hamburger Menu" />
-            <span class="checkmark">
-                <svg class="check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2b2e2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
-                <svg class="x" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#21808a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-            </span>
-        </label>
+            <label class="checkbox">
+                <div class="label">Color Palette</div>
+                <input type="checkbox" name="checkboxQuestion" id="colorPalette" value="Color Palette" />
+                <span class="checkmark">
+                    <svg class="check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2b2e2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
+                    <svg class="x" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#21808a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </span>
+            </label>
 
-        
-		<!-- <input type="checkbox" id="hamburgerMenu" name="hamburgerMenu" value="Hamburger Menu">
-		<label for="hamburgerMenu">Hamburger Menu</label> <br>
+            <label class="checkbox">
+                <div class="label">Fonts</div>
+                <input type="checkbox" name="checkboxQuestion" id="fonts" value="Fonts" />
+                <span class="checkmark">
+                    <svg class="check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2b2e2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
+                    <svg class="x" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#21808a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </span>
+            </label>
 
-		<input type="checkbox" id="pageNavButtons" name="pageNavButtons" value="Page Navigation Buttons">
-		<label for="pageNavButtons">Page Navigation Buttons</label> <br>
+            <label class="checkbox">
+                <div class="label">Buttons</div>
+                <input type="checkbox" name="checkboxQuestion" id="buttons" value="Buttons" />
+                <span class="checkmark">
+                    <svg class="check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2b2e2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
+                    <svg class="x" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#21808a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </span>
+            </label>
 
-		<input type="checkbox" id="scroll" name="scroll" value="Page Scrolling">
-		<label for="scroll">Page Scrolling</label> <br>
+            <label class="checkbox">
+                <div class="label">Photo Gallery</div>
+                <input type="checkbox" name="checkboxQuestion" id="photoGallery" value="Photo Gallery" />
+                <span class="checkmark">
+                    <svg class="check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2b2e2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
+                    <svg class="x" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#21808a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </span>
+            </label>
 
-		<input type="checkbox" id="colorPalette" name="colorPalette" value="Color Palette">
-		<label for="colorPalette">Color Palette</label> <br>
+            <label class="checkbox">
+                <div class="label">Video Gallery in Landing Page Background</div>
+                <input type="checkbox" name="checkboxQuestion" id="videoGallery" value="Video Gallery in Landing Page Background" />
+                <span class="checkmark">
+                    <svg class="check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2b2e2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
+                    <svg class="x" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#21808a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </span>
+            </label>        
+        </div>
+        <div class="question-container">
+            <p class="question">Rate your overall experience using the Discovery Land Company website:</p>
+            <div class="radio-button">
+            	<label class="radio">
+				    <div class="label">1</div>
+				    <input type="radio" name="rating" id="1" value="1">
+				    <span class="dot"></span>
+			    </label>
+            	<label class="radio">
+				    <div class="label">2</div>
+				    <input type="radio" name="rating" id="2" value="2">
+				    <span class="dot"></span>
+			    </label>
+            	<label class="radio">
+				    <div class="label">3</div>
+				    <input type="radio" name="rating" id="3" value="3">
+				    <span class="dot"></span>
+			    </label>
+            	<label class="radio">
+				    <div class="label">4</div>
+				    <input type="radio" name="rating" id="4" value="4">
+				    <span class="dot"></span>
+			    </label>
+            	<label class="radio">
+				    <div class="label">5</div>
+				    <input type="radio" name="rating" id="5" value="5">
+				    <span class="dot"></span>
+			    </label>
 
-		<input type="checkbox" id="fonts" name="fonts" value="Fonts">
-		<label for="fonts">Fonts</label> <br>
+        </div>
+        <div class="question-container">
+		    <p class="question">Comments</p>
 
-		<input type="checkbox" id="buttons" name="buttons" value="Buttons">
-		<label for="buttons">Buttons</label><br>
-
-		<input type="checkbox" id="photoGallery" name="photoGallery" value="Photo Gallery">
-		<label for="photoGallery">Photo Gallery</label><br><br>
-
-		<input type="checkbox" id="videoGallery" name="videoGallery" value="Video Gallery in landing page background">
-		<label for="videoGallery">Video Gallery in landing page background</label><br><br> -->
-
-        
-        <p>Rate your overall experience using the Discovery Land Company website:</p>
-
-		<input type="radio" name="fav_language" id="1" value="1">
-		<label for="1">1</label> <br>
-
-		<input type="radio" name="fav_language" id="1" value="2">
-		<label for="2">2</label> <br>
-
-		<input type="radio" name="fav_language" id="3" value="3">
-		<label for="3">3</label> <br>
-
-		<input type="radio" name="fav_language" id="4" value="4">
-		<label for="4">4</label> <br>
-
-		<input type="radio" name="fav_language" id="5" value="5">
-		<label for="5">5</label> <br>
-
-
-		<p>Comments</p>
-
-		<textarea name="comments" rows="10" cols="30" placeholder="Enter any additional comments here..." ></textarea><br><br>
+		    <textarea name="comments" rows="10" cols="30" placeholder="Enter any additional comments here..." ></textarea>        
+        </div>
 			
-		<input type="submit" value="Submit">
+		<input class="submit-button" type="submit" value="Submit">
 
-		<p>Website designed by Group 44 (Andrew, Zechen, Lisa)</p>
+		<p class="signature">Website designed by Group 44 (Andrew, Zechen, Lisa)</p>
         
 	</form>
 
