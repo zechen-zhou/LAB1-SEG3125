@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    padding: 80px;
+    padding: 50px 80px;
     background-color: #2B2E2E;
     font-family: 'Roboto';
     font-style: normal;
@@ -132,6 +132,10 @@ button {
 /* -- CHECKBOX -- */
 
 /* Create custom checkbox */
+label.checkbox {
+    margin: 5px;
+}
+
 .checkbox .checkmark {
     position: absolute;
     top: 0;
@@ -176,6 +180,14 @@ button {
 /* -- RADIO -- */
 
 /* Create a custom radio button */
+label.radio {
+    margin: 7px;
+}
+
+.radio-option {
+    display: block;
+}
+
 .radio-button .dot {
     position: absolute;
     top: 0;
@@ -212,12 +224,6 @@ button {
     height: 24px;
     display: flex;
     align-items: center;
-}
-
-.dropdown-menu label {
-    color: rgba(179, 185, 187, 1);
-    font-size: 12px;
-    font-weight: 500;
 }
 
 .dropdown-menu .custom-select select {
@@ -311,12 +317,6 @@ button {
     align-items: center;
 }
 
-.text-field label {
-    color: rgba(179, 185, 187, 1);
-    font-size: 12px;
-    font-weight: 500;
-}
-
 .text-field input {
     width: 180px;
     height: 32px;
@@ -348,9 +348,46 @@ button {
     background-color: rgba(179, 185, 187, 0.2);
 }
 
-/* -- PARAGRAPH -- */
-p {
+/* -- SIGNATURE -- */
+.signature {
+    font-size: 12px !important;
     color: rgba(179, 185, 187, 1);
-    font-size: 12px;
+}
+
+/* -- TEXT -- */
+.question {
+    color: rgba(179, 185, 187, 1);
+    font-size: 16px;
     font-weight: 500;
+}
+
+.webpage-title {
+    color: rgba(14, 216, 202);
+    font-size: 40px;
+    font-weight: 570;
+    margin-top: 0px;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    color: rgba(14, 216, 202);
+}
+
+label {
+    color: rgba(179, 185, 187, 1);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.submit-button {
+    background-color: rgba(14, 216, 202);
+    padding: 4px 7px;
+    margin-top: 5px;
+}
+
+.question-container {
+    margin-top: 30px;
 }
